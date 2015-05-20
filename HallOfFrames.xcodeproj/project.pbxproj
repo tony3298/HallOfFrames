@@ -14,6 +14,10 @@
 		473BFCA61B0D0BBB005C686B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 473BFCA51B0D0BBB005C686B /* Images.xcassets */; };
 		473BFCA91B0D0BBB005C686B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 473BFCA71B0D0BBB005C686B /* LaunchScreen.xib */; };
 		473BFCB51B0D0BBB005C686B /* HallOfFramesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 473BFCB41B0D0BBB005C686B /* HallOfFramesTests.m */; };
+		473BFCC01B0D0EC3005C686B /* PictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 473BFCBF1B0D0EC3005C686B /* PictureCollectionViewCell.m */; };
+		473BFCC31B0D0EDD005C686B /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 473BFCC21B0D0EDD005C686B /* Picture.m */; };
+		473BFCC51B0D18FF005C686B /* CustomizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 473BFCC41B0D18FF005C686B /* CustomizationView.xib */; };
+		473BFCC81B0D1952005C686B /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 473BFCC71B0D1952005C686B /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		473BFCAE1B0D0BBB005C686B /* HallOfFramesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HallOfFramesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		473BFCB31B0D0BBB005C686B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473BFCB41B0D0BBB005C686B /* HallOfFramesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HallOfFramesTests.m; sourceTree = "<group>"; };
+		473BFCBE1B0D0EC3005C686B /* PictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCollectionViewCell.h; sourceTree = "<group>"; };
+		473BFCBF1B0D0EC3005C686B /* PictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCollectionViewCell.m; sourceTree = "<group>"; };
+		473BFCC11B0D0EDD005C686B /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
+		473BFCC21B0D0EDD005C686B /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		473BFCC41B0D18FF005C686B /* CustomizationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomizationView.xib; sourceTree = "<group>"; };
+		473BFCC61B0D1952005C686B /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		473BFCC71B0D1952005C686B /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +93,16 @@
 			isa = PBXGroup;
 			children = (
 				473BFC9C1B0D0BBB005C686B /* AppDelegate.h */,
+				473BFCC61B0D1952005C686B /* CustomView.h */,
+				473BFCC71B0D1952005C686B /* CustomView.m */,
 				473BFC9D1B0D0BBB005C686B /* AppDelegate.m */,
+				473BFCC11B0D0EDD005C686B /* Picture.h */,
+				473BFCC21B0D0EDD005C686B /* Picture.m */,
+				473BFCBE1B0D0EC3005C686B /* PictureCollectionViewCell.h */,
+				473BFCBF1B0D0EC3005C686B /* PictureCollectionViewCell.m */,
 				473BFC9F1B0D0BBB005C686B /* ViewController.h */,
 				473BFCA01B0D0BBB005C686B /* ViewController.m */,
+				473BFCC41B0D18FF005C686B /* CustomizationView.xib */,
 				473BFCA21B0D0BBB005C686B /* Main.storyboard */,
 				473BFCA51B0D0BBB005C686B /* Images.xcassets */,
 				473BFCA71B0D0BBB005C686B /* LaunchScreen.xib */,
@@ -201,6 +219,7 @@
 			files = (
 				473BFCA41B0D0BBB005C686B /* Main.storyboard in Resources */,
 				473BFCA91B0D0BBB005C686B /* LaunchScreen.xib in Resources */,
+				473BFCC51B0D18FF005C686B /* CustomizationView.xib in Resources */,
 				473BFCA61B0D0BBB005C686B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +239,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				473BFCA11B0D0BBB005C686B /* ViewController.m in Sources */,
+				473BFCC31B0D0EDD005C686B /* Picture.m in Sources */,
+				473BFCC01B0D0EC3005C686B /* PictureCollectionViewCell.m in Sources */,
 				473BFC9E1B0D0BBB005C686B /* AppDelegate.m in Sources */,
 				473BFC9B1B0D0BBB005C686B /* main.m in Sources */,
+				473BFCC81B0D1952005C686B /* CustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
