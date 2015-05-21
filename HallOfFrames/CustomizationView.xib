@@ -159,6 +159,54 @@
                         </mask>
                     </variation>
                 </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="h2e-QL-Gl7">
+                    <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Tj5-dP-dwr"/>
+                        <constraint firstAttribute="width" constant="226" id="saP-4l-Sua"/>
+                    </constraints>
+                    <color key="thumbTintColor" red="1" green="0.009270870451" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Tj5-dP-dwr"/>
+                            <exclude reference="saP-4l-Sua"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Tj5-dP-dwr"/>
+                            <include reference="saP-4l-Sua"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onSlider:" destination="iN0-l3-epB" eventType="valueChanged" id="44Z-vG-zwi"/>
+                    </connections>
+                </slider>
+                <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="wfv-AV-ATg">
+                    <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="226" id="ZaE-xH-ziK"/>
+                        <constraint firstAttribute="height" constant="30" id="pkU-TH-iDJ"/>
+                    </constraints>
+                    <color key="thumbTintColor" red="0.14509804549999999" green="0.71372550729999995" blue="0.32941177490000001" alpha="1" colorSpace="deviceRGB"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="ZaE-xH-ziK"/>
+                            <exclude reference="pkU-TH-iDJ"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="ZaE-xH-ziK"/>
+                            <include reference="pkU-TH-iDJ"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="onSlider:" destination="iN0-l3-epB" eventType="valueChanged" id="Uwr-Xc-dq9"/>
+                    </connections>
+                </slider>
                 <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="lEO-Ik-r0J">
                     <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,54 +265,39 @@
                     <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="h2e-QL-Gl7">
-                    <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XG-2R-fJx">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="Tj5-dP-dwr"/>
-                        <constraint firstAttribute="width" constant="226" id="saP-4l-Sua"/>
+                        <constraint firstAttribute="height" constant="36" id="8de-wD-njv"/>
+                        <constraint firstAttribute="width" constant="136" id="fCc-Hc-2aJ"/>
                     </constraints>
-                    <color key="thumbTintColor" red="1" green="0.009270870451" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Accept Changes">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                     <variation key="default">
                         <mask key="constraints">
-                            <exclude reference="Tj5-dP-dwr"/>
-                            <exclude reference="saP-4l-Sua"/>
+                            <exclude reference="8de-wD-njv"/>
+                            <exclude reference="fCc-Hc-2aJ"/>
                         </mask>
                     </variation>
                     <variation key="widthClass=compact">
                         <mask key="constraints">
-                            <include reference="Tj5-dP-dwr"/>
-                            <include reference="saP-4l-Sua"/>
+                            <include reference="8de-wD-njv"/>
+                            <include reference="fCc-Hc-2aJ"/>
                         </mask>
                     </variation>
                     <connections>
-                        <action selector="onSlider:" destination="iN0-l3-epB" eventType="valueChanged" id="44Z-vG-zwi"/>
+                        <action selector="onAcceptButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="lkH-rp-fgS"/>
                     </connections>
-                </slider>
-                <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="wfv-AV-ATg">
-                    <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="226" id="ZaE-xH-ziK"/>
-                        <constraint firstAttribute="height" constant="30" id="pkU-TH-iDJ"/>
-                    </constraints>
-                    <color key="thumbTintColor" red="0.14509804549999999" green="0.71372550729999995" blue="0.32941177490000001" alpha="1" colorSpace="deviceRGB"/>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="ZaE-xH-ziK"/>
-                            <exclude reference="pkU-TH-iDJ"/>
-                        </mask>
-                    </variation>
-                    <variation key="widthClass=compact">
-                        <mask key="constraints">
-                            <include reference="ZaE-xH-ziK"/>
-                            <include reference="pkU-TH-iDJ"/>
-                        </mask>
-                    </variation>
-                    <connections>
-                        <action selector="onSlider:" destination="iN0-l3-epB" eventType="valueChanged" id="Uwr-Xc-dq9"/>
-                    </connections>
-                </slider>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -283,20 +316,26 @@
                 </constraint>
                 <constraint firstItem="lEO-Ik-r0J" firstAttribute="top" secondItem="wfv-AV-ATg" secondAttribute="bottom" constant="20" id="VGG-01-Wfb"/>
                 <constraint firstItem="A8S-ff-1aa" firstAttribute="top" secondItem="ink-2B-Ogu" secondAttribute="bottom" constant="31" id="bKu-rW-pGo"/>
+                <constraint firstAttribute="bottom" secondItem="6XG-2R-fJx" secondAttribute="bottom" constant="37" id="d4l-Za-bkf"/>
                 <constraint firstItem="ink-2B-Ogu" firstAttribute="top" secondItem="9fK-Yb-LVQ" secondAttribute="bottom" constant="15" id="fAO-iL-cfr"/>
                 <constraint firstAttribute="centerY" secondItem="pyB-VB-HSH" secondAttribute="centerY" id="fJB-6f-coX">
                     <variation key="widthClass=compact" constant="112"/>
                 </constraint>
                 <constraint firstItem="h2e-QL-Gl7" firstAttribute="top" secondItem="9fK-Yb-LVQ" secondAttribute="bottom" constant="29" id="gr2-bS-mKl"/>
                 <constraint firstItem="ink-2B-Ogu" firstAttribute="leading" secondItem="A8S-ff-1aa" secondAttribute="leading" id="lAX-kB-PrD"/>
-                <constraint firstItem="wfv-AV-ATg" firstAttribute="top" secondItem="h2e-QL-Gl7" secondAttribute="bottom" constant="21" id="m3Q-ia-pdR"/>
-                <constraint firstItem="flG-LT-5oa" firstAttribute="top" secondItem="wfv-AV-ATg" secondAttribute="bottom" constant="8" symbolic="YES" id="oUK-2T-g59"/>
+                <constraint firstItem="wfv-AV-ATg" firstAttribute="top" secondItem="h2e-QL-Gl7" secondAttribute="bottom" constant="21" id="m3Q-ia-pdR">
+                    <variation key="widthClass=compact" constant="23"/>
+                </constraint>
+                <constraint firstItem="flG-LT-5oa" firstAttribute="top" secondItem="wfv-AV-ATg" secondAttribute="bottom" constant="8" symbolic="YES" id="oUK-2T-g59">
+                    <variation key="widthClass=compact" constant="6"/>
+                </constraint>
                 <constraint firstItem="pyB-VB-HSH" firstAttribute="top" secondItem="DIG-DN-1Ni" secondAttribute="bottom" constant="70" id="pft-Ak-moK">
                     <variation key="widthClass=compact" constant="23"/>
                 </constraint>
                 <constraint firstItem="9fK-Yb-LVQ" firstAttribute="top" secondItem="ewk-gQ-hbA" secondAttribute="bottom" constant="49" id="rau-Bi-l0w"/>
                 <constraint firstAttribute="centerX" secondItem="P8L-Sz-rml" secondAttribute="centerX" id="tbt-Du-Ht5"/>
                 <constraint firstItem="DIG-DN-1Ni" firstAttribute="top" secondItem="P8L-Sz-rml" secondAttribute="bottom" constant="8" id="utC-1t-xWT"/>
+                <constraint firstAttribute="centerX" secondItem="6XG-2R-fJx" secondAttribute="centerX" id="xDY-v1-rM2"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
@@ -305,12 +344,13 @@
                     <exclude reference="ewk-gQ-hbA"/>
                     <exclude reference="P8L-Sz-rml"/>
                     <exclude reference="9fK-Yb-LVQ"/>
+                    <exclude reference="h2e-QL-Gl7"/>
+                    <exclude reference="wfv-AV-ATg"/>
                     <exclude reference="lEO-Ik-r0J"/>
                     <exclude reference="ink-2B-Ogu"/>
                     <exclude reference="A8S-ff-1aa"/>
                     <exclude reference="flG-LT-5oa"/>
-                    <exclude reference="h2e-QL-Gl7"/>
-                    <exclude reference="wfv-AV-ATg"/>
+                    <exclude reference="6XG-2R-fJx"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="tbt-Du-Ht5"/>
@@ -335,6 +375,8 @@
                     <exclude reference="oUK-2T-g59"/>
                     <exclude reference="PJ3-Yx-u5K"/>
                     <exclude reference="VGG-01-Wfb"/>
+                    <exclude reference="d4l-Za-bkf"/>
+                    <exclude reference="xDY-v1-rM2"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -344,12 +386,13 @@
                     <include reference="ewk-gQ-hbA"/>
                     <include reference="P8L-Sz-rml"/>
                     <include reference="9fK-Yb-LVQ"/>
+                    <include reference="h2e-QL-Gl7"/>
+                    <include reference="wfv-AV-ATg"/>
                     <include reference="lEO-Ik-r0J"/>
                     <include reference="ink-2B-Ogu"/>
                     <include reference="A8S-ff-1aa"/>
                     <include reference="flG-LT-5oa"/>
-                    <include reference="h2e-QL-Gl7"/>
-                    <include reference="wfv-AV-ATg"/>
+                    <include reference="6XG-2R-fJx"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="tbt-Du-Ht5"/>
@@ -374,6 +417,8 @@
                     <include reference="oUK-2T-g59"/>
                     <include reference="PJ3-Yx-u5K"/>
                     <include reference="VGG-01-Wfb"/>
+                    <include reference="d4l-Za-bkf"/>
+                    <include reference="xDY-v1-rM2"/>
                 </mask>
             </variation>
             <connections>

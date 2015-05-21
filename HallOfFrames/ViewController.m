@@ -77,7 +77,30 @@
                              self.customizationView.center = self.view.center;
                      }];
 
+    self.customizationView.redSlider.value = 0;
+    self.customizationView.greenSlider.value = 0;
+    self.customizationView.blueSlider.value = 0;
+
     self.customizationView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
+
+}
+
+-(void)customView:(id)view tapAcceptButton:(UIButton *)button {
+
+    UIColor *cellColor = [UIColor colorWithRed:self.customizationView.redSlider.value/255 green:self.customizationView.greenSlider.value/255 blue:self.customizationView.blueSlider.value/255 alpha:1.0];
+
+    Picture *picture = [self.pictures objectAtIndex:self.indexPath.row];
+
+    picture.frameColor = cellColor;
+
+    [UIView animateWithDuration:0.5 animations: ^{
+        self.customizationView.frame = CGRectMake(0, self.customizationView.frame.size.height, self.customizationView.frame.size.width, self.customizationView.frame.size.height);
+    } completion:^(BOOL finished) {
+
+        [self.customizationView removeFromSuperview];
+    }];
+
+    [self.collectionView reloadData];
 
 }
 
@@ -151,20 +174,7 @@
 
         cell.backgroundColor = [UIColor colorWithRed:self.customizationView.redSlider.value/255 green:self.customizationView.greenSlider.value/255 blue:self.customizationView.blueSlider.value/255 alpha:1.0];
 
-
     }
-
-    
 }
-
-//-(void)showAnimation {
-//
-//    [self.view addSubview:geopointView]
-//    geopointView.frame = // somewhere offscreen, in the direction you want it to appear from
-//    [UIView animateWithDuration:10.0
-//                     animations:^{
-//                         geopointView.frame = // its final location
-//                     }];
-//}
 
 @end

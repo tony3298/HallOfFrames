@@ -10,10 +10,11 @@
 
 @protocol CustomViewDelegate <NSObject>
 
--(void)customView:(id)view didTapButton:(UISlider *)button;
+-(void)customView:(id)view didTapButton:(UIButton *)button;
+
+-(void)customView:(id)view tapAcceptButton:(UIButton *)button;
 
 -(void)customView:(id)view onSliderDragged:(UISlider *)slider;
-
 
 @end
 

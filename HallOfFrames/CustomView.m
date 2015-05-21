@@ -22,5 +22,11 @@
     [self.delegate customView:self onSliderDragged:sender];
 }
 
+-(IBAction)onAcceptButtonTapped:(UIButton *)sender {
+
+    [self.delegate customView:self tapAcceptButton:sender];
+
+}
+
 
 @end
